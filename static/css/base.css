@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+:root {
+    --padding: 8vw;
+    --pcPadding: 7.25vw;
+    --backgroundColor: #EFEFEF;
+    --textColor: #4e443e;
+    --footerColor: #e9e7e6;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {font-size: 62.5%;}
+html, body {
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: var(--backgroundColor);
+}
+
+
+div, h1, h2, h3, h4, h5, h6, p, a, span, input, button, tspan {
+    font-family: neue-haas-unica, dnp-shuei-gothic-gin-std,
+    "Yu Gothic Medium","游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    font-weight: 500;
+    color: var(--textColor);
+    font-display: swap;
+    font-feature-settings: "palt";
+    letter-spacing: .125em;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.8;
+}
+
+h1, h1.h1, h1.h2, h1.h3, 
+h2, h2.h1, h2.h2, h2.h3, 
+h3, h3.h1, h3.h2, h3.h3, 
+.heading {letter-spacing: 0.245em;}
+.h1, .h2, .h3, .h4, .h5, .h6, .heading {letter-spacing: 0.1em;}
+
+:lang(en),
+:lang(en) * {
+    font-family: "neue-haas-unica", sans-serif;
+    font-weight: 400;
+    letter-spacing: -.015em !important;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+}
+svg, svg path, svg g {fill: var(--textColor);}
+
+.h0 {font-size: 1.8rem;}
+h1, .h1 {font-size: 1.6rem;}
+h2, .h2 {font-size: 1.5rem;}
+h3, .h3 {font-size: 1.4rem;}
+h4, .h4 {font-size: 1.25rem;}
+h5, .h5 {font-size: 1.15rem;}
+h6, .h6 {font-size: 1.05rem;}
+.h7 {font-size: .9rem;}
+
+.sp {display: block;}
+.pc {display: none;}
+
+p, .p {
+    font-weight: 400;
+    line-height: 1.9;
+    font-size: 1.25rem;
+    text-align: justify;
+    word-wrap: break-word;
+    hyphens: auto;
+    word-break: break-all;
+}
+li {
+    text-decoration: none;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    transition: .75s ease-in-out;
+}
+a:hover {opacity: .85;}
+
+section {
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+}
+img {
+    width: 100%;
+    object-fit: cover;
+    object-position: 50%;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+input::placeholder {
+    color: var(--textColor);
+    opacity: .25;
+}
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+
+.uppercase {text-transform: uppercase;}
+
+.semitrans {opacity: .7;}
+.white {color: var(--bodyColor);}
+.gray {color: var(--subColor);}
+ul li {text-decoration: none;list-style: none;}
+.flex {display: flex; justify-content: center; align-items: center;}
+
+.wfull {width: 100%;}
+
+
+main {margin: auto;}
+
+
+@media screen and (min-width: 720px) {
+    html {font-size: 62.5%;}
+    .h0 {font-size: 3.6rem;}
+h1, .h1 {font-size: 1.85rem;}
+h2, .h2 {font-size: 1.65rem;}
+h3, .h3 {font-size: 1.5rem;}
+h4, .h4 {font-size: 1.4rem;}
+h5, .h5 {font-size: 1.3rem;}
+h6, .h6 {font-size: 1.1rem;}
+.h7 {font-size: 1.0rem;}
+p, .p {
+    font-size: 1.35rem;
+    letter-spacing: .15em;
+    line-height: 2.0;
+    text-align: left;
+}
+.sp {display: none;}
+.pc {display: block;}
+
+section {
+    padding-left: var(--pcPadding);
+    padding-right: var(--pcPadding);
+}
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 720px) {
+    html {font-size: 50%;}
+}
+  
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+        /* For portrait layouts only */
+}
+
+
+
+

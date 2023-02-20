@@ -1,0 +1,35 @@
+#in-product .carousel .swiper-slide {width: 62.5% !important;}
+
+#in-product .carousel .swiper-slide {margin-left: var(--padding);}
+#in-product .carousel .swiper-slide:last-of-type {margin-right: 30vw !important;}
+
+.swiper-scrollbar {
+  height: 2.5px !important;
+  width: calc( 100vw - var(--padding) * 2) !important;
+  left: var(--padding) !important;
+}
+
+
+@media screen and (min-width: 720px) {
+    .first-section {padding-top: 7rem;}
+
+    #slug-body .wrapper img {
+      width: 100%;
+      margin: 4rem auto;
+      margin-left: 2.2px;
+    }
+    #slug-body .wrapper h3 {font-size: 1.6rem;}
+
+
+    #in-product .carousel .swiper-slide {
+      width: 18.5vw !important;
+      margin-left: 0;
+      margin-right: 4rem !important;
+    }
+    .swiper-scrollbar {
+      width: calc(100vw - var(--pcPadding) * 2) !important;
+      left: 0 !important;
+    }
+    
+
+}
