@@ -33,13 +33,19 @@
     'scrolled': headerHiddenFlag,
     'is-top': headerTopFlag }" -->
   <header>
-    <a href="/" aria-label="Home" class="sp" data-sveltekit-reload>
+    <a href="/" aria-label="Home" class="" data-sveltekit-reload>
       <Logo />
     </a>
-
+    <div class="center pc">
+      <a href="/information" class="h4" lang="en">Information</a>
+      <a href="/products" class="h4" lang="en">Products</a>
+      <a href="/about" class="h4" lang="en">About</a>
+      <a href="/about" class="h4" lang="en">Cocktails</a>
+      <a href="/about" class="h4" lang="en">Restaurant</a>
+    </div>
     <div class="right">
-      <a href="/about" class="h5 half" lang="en">About</a>
-      <a href="/about" class="h5 half" lang="en">Products</a>
+      <a href="/about" class="h5 half sp" lang="en">About</a>
+      <a href="/about" class="h5 half sp" lang="en">Products</a>
 
       <div class="menus">
         <div class="open-button sp" 
@@ -98,5 +104,20 @@ header .right {
   align-items: center;
 }
 header .right * {margin-left: 1rem;}
+
+@media screen and (min-width: 720px) {
+
+
+  header {
+    padding: 2.5rem var(--pcPadding) 2.2rem;
+    padding: 1.5rem var(--pcPadding) 1.2rem;
+    padding: 2.6rem var(--pcPadding) 2.2rem;
+  }
+
+  header .center a {
+    margin: 0 1.5rem;
+  }
+
+}
 
 </style>

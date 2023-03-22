@@ -3,6 +3,7 @@ import Logo from '../components/Logo.svelte';
 </script>
 
 <footer>
+    <div class="wrapper">
     <div class="about">
         <a href="/" class="footer-logo">
             <Logo />
@@ -49,6 +50,7 @@ import Logo from '../components/Logo.svelte';
             <li><a href="/" lang="en" class="h4">LINE Official</a></li>          
         </ul>
     </div>
+    </div>
     <div class="l-line"></div>
     <div class="bottom">
         <div class="h6" lang="en">©SHOCHU.X</div>
@@ -61,40 +63,72 @@ import Logo from '../components/Logo.svelte';
 
 
 <style>
-    footer a {display: block;}
+footer a {display: block;}
+footer {
+    margin-top: 8rem;
+    padding: 0 var(--padding);
+    padding-top: 8rem;
+    padding-bottom: 1.2rem;
+    background-color: var(--footerColor);
+}
+footer .footer-logo {width: 10.5rem;}
+footer .about p {margin-top: 3rem;}
+
+footer .pages {margin-top: 6rem;}
+footer .pages a {margin-top: 2.5rem;}
+footer .links {
+    margin-top: 5rem;
+    display: flex;
+}
+footer .links ul {width: 48%;}
+footer .links li {margin-bottom: 1.5rem;}
+footer .l-line {
+    margin: 4rem 0 1.5rem;
+    margin-left: calc(-1 * var(--padding));
+    opacity: .5;
+}
+
+footer .bottom {
+    display: flex;
+    justify-content: space-between;
+    opacity: .5;
+}
+footer .bottom .right a {
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+
+@media screen and (min-width: 720px) {
     footer {
-        margin-top: 8rem;
+        margin-top: 15rem;
         padding: 0 var(--padding);
-        padding-top: 8rem;
-        padding-bottom: 1.2rem;
-        background-color: var(--footerColor);
+        padding-top: 15rem;
+        padding-bottom: 4rem;
     }
-    footer .footer-logo {width: 10.5rem;}
-    footer .about p {margin-top: 3rem;}
+    footer .wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 
-    footer .pages {margin-top: 6rem;}
-    footer .pages a {margin-top: 2.5rem;}
-
-    footer .links {
+    footer .about {margin-right: 14.5rem;}
+    footer .pages {
         margin-top: 5rem;
-        display: flex;
+        margin-right: 13.5rem;
     }
-    footer .links ul {width: 48%;}
-    footer .links li {margin-bottom: 1.5rem;}
+    footer .pages a {
+        margin-top: 0;
+        margin-bottom: 2.5rem;
+    }
+    footer .links ul {width: auto;}
+    footer .links .jp-links {margin-right: 10rem;}
+
     footer .l-line {
-        margin: 4rem 0 1.5rem;
-        margin-left: calc(-1 * var(--padding));
-        opacity: .5;
+        margin: 8rem 0 4rem;
+        margin-left: calc(-1 * var(--pcPadding));
     }
-    
-    footer .bottom {
-        display: flex;
-        justify-content: space-between;
-        opacity: .5;
-    }
-    footer .bottom .right a {
-        display: inline-block;
-        margin-left: 2rem;
-    }
+
+}
     
 </style>

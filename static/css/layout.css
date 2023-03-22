@@ -1,22 +1,52 @@
 
-  .l-card {
-    width: 100%;
-    margin-bottom: 6rem;
-  }
-  .l-card img {
-    width: 100%;
-    height: 50vw;
-  }
-  .l-card h3 {margin: 2rem 0 .25rem;}
-  .l-card p {margin: .75rem 0 2.5rem;}
+@media screen and (max-width: 480px) {
+  .l-section-head h2 {font-size: 1.45rem;}
+  .l-section-head h3 {font-size: 1.2rem;}
+  .l-section-head p {font-size: 1.2rem;opacity: .9;}
+}
 
+
+.l-products .container {
+  width: 100%;
+  margin-bottom: 7.5rem;
+}
+.l-products .container img {
+  width: 100%;
+  height: calc((100vw - var(--padding) * 2) / 16 * 9);
+  object-position: 50% 70%;
+}
+.l-products .container h2 {margin: 1.5rem 0 0.5rem;}
+.l-products .container p {width: 85%;}
+.l-products .container .bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+
+
+  .col-2 a img {
+    height: calc((100vw - var(--padding)*2)/16*9);
+    width: calc(100vw - var(--padding)*2);
+  }
   .l-section-head {margin-bottom: 5rem;}
   .l-section-head img {
     width: 100vw; 
     height: 50vw;
     margin-left: calc(-1 * var(--padding));
   }
-  .l-section-head h2 {margin: 2.5rem 0 .5rem;}
+  .l-section-head h2 {
+    margin: 6rem 0 .5rem;
+    letter-spacing: .235em;
+  }
+  .l-section-head h3 {
+    margin-left: .15px;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    opacity: .5;
+    margin: .75rem 0 1.5rem;
+  }
 
   .l-link {
     position: relative;
@@ -94,7 +124,38 @@
 	opacity: .5;
 }
 
+
+
+
+
+
+
+
 @media screen and (min-width: 720px) {
+
+
+  .l-products .container {margin-bottom: 14.5rem;}
+  .l-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: calc(.8 * var(--pcPadding));
+  }
+  .l-products .container img {height: calc((100vw - var(--pcPadding) * 3) / 3 / 16 * 9);}
+
+
+
+
+  .col-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: calc(.5 * var(--pcPadding));
+    margin-top: 8rem;
+  }
+  .col-2 a img {
+    width: calc((100vw - var(--padding) * 2.5) / 2);
+    height: calc((100vw - var(--padding) * 2.5) / 2 / 3 * 2);
+  }
+
 
   .pc-side {
     display: flex;
@@ -108,14 +169,16 @@
     height: 55vh;
     margin-left: calc(-1 * var(--pcPadding));
   }
-	.l-section-head h2 {margin-left: -1px;}
+
+	.l-section-head h2 {
+    margin-left: -1px;
+    margin-top: 0;
+  }
 	.l-section-head h3 {
 		font-size: 1.5rem;
-		margin-left: .15px;
-    text-transform: uppercase;
-    opacity: .5;
     margin: 1.5rem 0 2rem;
 	}	
+
 	.l-word .right {margin-bottom: 0;}
 	
 	.l-word .left h1 {

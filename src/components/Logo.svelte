@@ -17,4 +17,8 @@
 		height: auto;
 	}
 
+	@media screen and (min-width: 720px) {
+		svg {width: 10.5rem;}
+	}
+
 </style>

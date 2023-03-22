@@ -24,7 +24,7 @@ html, body {
 
 
 div, h1, h2, h3, h4, h5, h6, p, a, span, input, button, tspan {
-    font-family: neue-haas-unica, dnp-shuei-gothic-gin-std,
+    font-family: "TT Commons Regular", dnp-shuei-gothic-gin-std,
     "Yu Gothic Medium","游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
     font-weight: 500;
     color: var(--textColor);
@@ -38,17 +38,18 @@ div, h1, h2, h3, h4, h5, h6, p, a, span, input, button, tspan {
 h1, h1.h1, h1.h2, h1.h3, 
 h2, h2.h1, h2.h2, h2.h3, 
 h3, h3.h1, h3.h2, h3.h3, 
-.heading {letter-spacing: 0.245em;}
-.h1, .h2, .h3, .h4, .h5, .h6, .heading {letter-spacing: 0.1em;}
+.heading {letter-spacing: 0.2em;}
+.h1, .h2, .h3, .h4, .h5, .h6, .heading {letter-spacing: 0.12em;}
 
 :lang(en),
-:lang(en) * {
+:lang(en) *,h3.h3:lang(en) {
     font-family: "neue-haas-unica", sans-serif;
     font-weight: 400;
-    letter-spacing: -.015em !important;
+    letter-spacing: -.015em;
     line-height: 1.4;
     -webkit-font-smoothing: antialiased;
 }
+
 svg, svg path, svg g {fill: var(--textColor);}
 
 .h0 {font-size: 1.8rem;}
@@ -64,7 +65,7 @@ h6, .h6 {font-size: 1.05rem;}
 .pc {display: none;}
 
 p, .p {
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.9;
     font-size: 1.25rem;
     text-align: justify;
@@ -134,7 +135,7 @@ h5, .h5 {font-size: 1.3rem;}
 h6, .h6 {font-size: 1.1rem;}
 .h7 {font-size: 1.0rem;}
 p, .p {
-    font-size: 1.35rem;
+    font-size: 1.4rem;
     letter-spacing: .15em;
     line-height: 2.0;
     text-align: left;
